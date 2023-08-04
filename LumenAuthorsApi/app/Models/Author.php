@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Author extends Model
 {
-    use HasFactory, ApiResponses;
+    use HasFactory;
 
     protected $table = 'authors';
     protected $fillable = ['name', 'gender', 'country', 'status'];

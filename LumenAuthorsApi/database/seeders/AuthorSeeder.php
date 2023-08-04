@@ -2,18 +2,17 @@
 
 namespace Database\Seeders;
 
+use App\Models\Author;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class AuthorSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
-     * @return void
      */
-    public function run()
+    public function run(): void
     {
-         $this->call(AuthorSeeder::class);
+        \App\Models\Author::factory()->count(50)->create();
     }
 }
